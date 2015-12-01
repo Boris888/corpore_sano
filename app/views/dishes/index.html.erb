@@ -1,3 +1,134 @@
+<%= stylesheet_link_tag "cinq" %>
+<%= stylesheet_link_tag "cart" %>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.scrollTo').click( function() { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      var speed = 750; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+    });
+  });
+</script>
+
+<span>rrrsrsnsnnrsnsnssn</span>
+<body class="bkg">
+
+<br>
+<br>
+<br><br>
+<br>
+<section>
+<input type="radio" id="profile" value="1" name="tractor" checked='checked' />
+<input type="radio" id="settings" value="2" name="tractor" />
+<input type="radio" id="posts" value="3" name="tractor" />
+<input type="radio" id="books" value="4" name="tractor" />
+  <input type="radio" id="vendredi" value="5" name="tractor" />
+
+
+
+
+
+  <nav>
+  <label for="settings" class=''>Lundi</label>
+  <label for="posts" class=>Mardi</label>
+  <label for="books" class=>Mercredi</label>
+  <label for="profile" class=>Jeudi</label>
+   <label for="vendredi" class=>Vendredi</label>
+  </nav>
+
+
+<article class='uno'>
+    <h2>
+    <img alt=''  src='../assets/crudité.jpg'  />
+    <br>
+
+      <span>Spanish Css blog</span></h2>
+ <!--   <footer>
+    <ul>
+      <li class=''></li>
+      <li class=''></li>
+      <li class='fontawesome-coffee'></li>
+      <li class='fontawesome-hand-left'></li>
+    </ul>
+   </footer> -->
+  </article>
+
+
+
+
+
+
+  <article class='dos '>
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+ -->
+ <br>
+<img src='../assets/lucien.jpg' class="center-block img-responsive" height="427" style="max-width: 640px">
+
+
+
+
+<!--     </div>
+  </div>
+</div> -->
+
+
+  </article>
+
+  <article class='tres '>
+    <img src='../assets/chèvre et miel.jpg' class="center-block img-responsive" height="427" style="max-width: 640px">
+  </article>
+
+  <article class='cuatro'>
+<!-- <img src='../assets/burritos.jpg' class="center-block img-responsive" /> -->
+
+<img src='../assets/burritos.jpg' class="center-block img-responsive" height="427" style="max-width: 640px">
+    <dl>
+      <dt>Guía de Transiciones Css</dt>
+      <dd>Todas y cada una de las propiedades css que componen el grupo de las transitions con demos.
+    </dl>
+  </article>
+
+
+  <article class='cinqo'>
+    <img src='../assets/planet-maki.jpg' class="center-block img-responsive" height="427" style="max-width: 640px">
+
+ </article>
+</section>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h1>Dishes#index</h1>
 <p>Find me in app/views/dishes/index.html.erb</p>
 
