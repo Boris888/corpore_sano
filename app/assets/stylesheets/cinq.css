@@ -218,7 +218,95 @@ a:hover {color: rgba(0,0,0,.2)}
 
 /*.bkg {  background-image: url(../assets/étoile.jpg);}*/
 
-.punchline {
-}
 
 body { background-color: purple}
+
+
+
+
+
+
+
+
+
+
+/*puncheline css*/
+
+.content {
+  width:237px;
+  font-size:36px;
+  line-height:40px;
+  font-family:'Muli';
+  color: black;
+  height:40px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-15px;
+  margin-left:-118px;
+
+  &:before {
+    content:'[';
+    position:absolute;
+    left:-30px;
+    line-height:40px;
+  }
+  &:after {
+    content:']';
+    position:absolute;
+    right:-30px;
+    line-height:40px;
+  }
+  &:after, &:before {
+    color:#16a085;
+    font-size:42px;
+    animation:2s linear 0s normal none infinite opacity;
+  }
+}
+
+.visible {
+  float:left;
+  font-weight:600;
+  overflow:hidden;
+  height:40px;
+}
+
+p {
+  display:inline;
+  float:left;
+  margin:0;
+}
+
+ul {
+  margin-top:0;
+  padding-left:110px;
+  text-align:left;
+  list-style:none;
+  animation: 8s linear 0s normal none infinite change;
+}
+
+ul li {
+  line-height:40px;
+  margin:0;
+}
+
+@keyframes opacity {
+  0%   {opacity:0;}
+  50%  {opacity:1;}
+  100% {opacity:0;}
+}
+
+@keyframes change {
+  0%   {margin-top:0;}
+  23%  {margin-top:0;}
+  33%  {margin-top:-40px;}
+  56%  {margin-top:-40px;}
+  66%  {margin-top:-80px;}
+  90%  {margin-top:-80px;}
+  100%  {margin-top:-120px;}
+}
+
+.punchlineborder {
+
+  border: 3px solid red;
+}
